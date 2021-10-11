@@ -1,0 +1,28 @@
+.blogs-right-container {
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.blogs-right-container .blogs-title,
+.blogs-right-container .blogs-item {
+    height: 40px;
+    line-height: 40px;
+    color: #555;
+}
+
+.blogs-right-container .blogs-item:hover {
+    cursor: pointer;
+    color: #00a1d6;
+}
+
+.blogs-right-container .blogs-item .blogs-item-title {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.blogs-right-container .blogs-item .blogs-item-num {
+    font-size: 14px;
+}

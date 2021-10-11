@@ -1,0 +1,32 @@
+.blog-detail-wrap {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.blog-detail-container .aside .item{
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.blog-detail-container .aside .item.item-cursor {
+    cursor: pointer;
+}
+
+.blog-detail-container .aside .item:hover {
+    color: #4e6ef2;
+}
+
+.blog-detail-container .markdown-body img{
+    width: 100% !important;
+}
+
+.blog-detail-wrap .page-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+}

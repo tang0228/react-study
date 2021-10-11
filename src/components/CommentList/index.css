@@ -1,0 +1,55 @@
+.comment-list-container {
+    width: 100%;
+
+}
+
+.comment-list-container .comment-header {
+    margin-top: 16px;
+    color: #00a1d6;
+    font-weight: bold;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    background-color: transparent;
+    padding: 8px 0;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.comment-header .comment-title {
+    margin-right: 16px;
+}
+
+.comment-list-content .comment-list-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    position: relative;
+    border-bottom: 1px solid #e5e9ef;
+}
+
+.comment-list-content .comment-list-item img {}
+
+.comment-list-content .comment-list-item .main {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-list-content .comment-list-item .main span{
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.comment-list-content .comment-list-item .main p {
+    color: #333;
+}
+
+.comment-list-content .comment-list-item .date {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    color: #555;
+    font-size: 14px;
+}

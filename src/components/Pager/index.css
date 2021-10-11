@@ -1,0 +1,36 @@
+.pager-container {
+    margin-top: 16px;
+    display: flex;
+}
+
+.pager-container.pager-left {
+    justify-content: flex-start;
+}
+
+.pager-container.pager-center {
+    justify-content: center;
+}
+
+.pager-container.pager-right {
+    justify-content: flex-end;
+}
+
+.pager-container .item {
+    display: inline-block;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #444;
+    padding: 3px 5px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.pager-container .active {
+    border: none;
+    color: #444;
+}
+
+.pager-container .disabled {
+    cursor: not-allowed;
+}

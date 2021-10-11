@@ -1,0 +1,17 @@
+.my-node {
+    position: relative;
+}
+
+.my-node-enter {
+  opacity: 0;
+  left: 100%;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: all 10000ms;
+  left: 0;
+}
+.my-node-exit {
+  opacity: 1;
+}
+

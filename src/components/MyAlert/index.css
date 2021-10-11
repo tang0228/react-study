@@ -1,0 +1,32 @@
+.my-alert-container {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,0.20);
+    font-size: 14px;
+    transition: opacity .3s,transform .3s;
+}
+
+.my-alert-container.success {
+    color: #fff;
+    background-color: #67c23a;
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.my-alert-container.error {
+    color: #fff;
+    background-color: #f56c6c;
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.my-alert-container.warning {
+    color: #fff;
+    background-color: #e6a23c;
+    opacity: 1;
+    transform: translateY(-15px);
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2844112 */
+  src: url('iconfont.woff2?t=1632907691492') format('woff2'),
+       url('iconfont.woff?t=1632907691492') format('woff'),
+       url('iconfont.ttf?t=1632907691492') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jinru:before {
+  content: "\e600";
+}
+
+.icon-quancha:before {
+  content: "\e61f";
+}
+
+.icon-chaping:before {
+  content: "\e615";
+}
+
+.icon-duigouxiao:before {
+  content: "\e8bd";
+}
+
+.icon-dianzan:before {
+  content: "\ec7f";
+}
+
+.icon-home-3-line:before {
+  content: "\e721";
+}
+
+.icon-account-pin-box-line:before {
+  content: "\e753";
+}
+
+.icon-book-3-line:before {
+  content: "\e77d";
+}
+
+.icon-chat-smile-2-line:before {
+  content: "\e79f";
+}
+
+.icon-psychotherapy-line:before {
+  content: "\e98d";
+}
+

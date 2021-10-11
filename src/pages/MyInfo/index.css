@@ -1,0 +1,12 @@
+.my-info-container {
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+.myinfo {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
