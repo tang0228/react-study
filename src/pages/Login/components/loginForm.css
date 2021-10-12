@@ -1,0 +1,127 @@
+.login-container {
+    order: 3;
+    padding-left: 45px;
+    width: 420px;
+}
+
+.login-container .form-header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.login-container .form-header {
+    font-size: 14px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.login-container .form-header .active {
+    color: #02a7de;
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-item input {
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #ddd;
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.form-item .code {
+    outline: none;
+    color: #fff;
+    background: #00a1d6;
+    border: 1px solid #00a1d6;
+    width: 130px;
+    height: 36px;
+    position: absolute;
+    padding: 0 4px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: bold;
+    line-height: 36px;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.form-item .code:hover {
+    background: #00bee7;
+}
+
+.form-item input:focus {
+    border: 1px solid #02a7de;
+    outline: none;
+}
+
+.login-container .text {
+    margin: 6px 0;
+    font-size: 12px;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.login-container .text .tips {
+    color: #f66495;
+}
+
+.form-item.btn-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item.btn-box .btn {
+    height: 36px;
+    border-radius: 2px;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    width: 184px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    color: #555;
+    outline: none;
+    background: #fff;
+}
+
+.form-item.btn-box .login {
+    border: 1px solid #0381aa;
+    color: #fff;
+    background: #00a7de;
+}
+
+.form-item.btn-box .login:hover {
+    background: #00bee7;
+}
+
+.form-item.btn-box .reset:hover {
+    background: #f7f7f7;
+}
+
+.form-item .code .captcha {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.form-item .captcha-tip {
+    position: absolute;
+    right: -5px;
+    bottom: -26px;
+    color: #00a1d6;
+    font-size: 12px;
+    letter-spacing: 0;
+    cursor: pointer;
+}

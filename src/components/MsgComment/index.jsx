@@ -7,12 +7,13 @@ export default function MsgComment(props) {
   const [nickname, setNickname] = useState(""); // 昵称
   const [content, setContent] = useState(""); // 内容
   const handleChange = useCallback((e) => {
-    if (e.target.name === "nickname") {
+    let inpName = e.target.name;
+    if (inpName === "nickname") {
       setNickname(e.target.value);
     } else {
       setContent(e.target.value);
     }
-  });
+  }, []);
 
   const handleClick = useCallback(() => {
     props.handleSubmit && props.handleSubmit(nickname, content);

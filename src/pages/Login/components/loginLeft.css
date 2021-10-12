@@ -1,0 +1,49 @@
+.center-container {
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.center-container .left {
+    width: 489px;
+    text-align: center;
+    padding-top: 72px;
+    order: 1;
+}
+
+.center-container .left img {
+    width: 150px;
+    height: 150px;
+}
+
+.center-container .left .left-footer {
+    background: url("https://s1.hdslb.com/bfs/static/passport/static/img/2233login.af9c53d.png");
+    width: 480px;
+    height: 155px;
+}
+
+.center-container .left .left-footer .tip {
+    padding-top: 20px;
+    text-align: center;
+    color: #222;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+
+.center-container .left .left-footer .desc {
+    text-align: center;
+    color: #717171;
+    font-size: 14px;
+}
+
+.center-container .line {
+    border-right: 1px solid #ddd;
+    height: 300px;
+    margin-top: 28px;
+    width: 0;
+    order: 2;
+}

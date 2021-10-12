@@ -2,38 +2,27 @@ import React from "react";
 import Search from "./components/Search";
 import AsideInfo from "./components/AsideInfo";
 import QuickWeb from "./components/QuickWeb";
-// import store from "../../store";
-
 import "./index.css";
-
-import {
-  incrementAction,
-  decrementAction,
-} from "../../store/action/count";
-import {setFoldAction } from "../../store/action/nav"
 import { connect } from "react-redux";
+import { delUserAction } from "../../store/action/user"
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    increase: (...args) => dispatch(incrementAction(...args)),
-    decrease: (...args) => dispatch(decrementAction(...args)),
-    setFold: (...args) => dispatch(setFoldAction(...args)),
-  };
-};
-
+    return {
+        delUser: (...args) => dispatch(delUserAction(...args))
+    }
+}
 class Index extends React.Component {
   render() {
-    // const { countReducer, increase, decrease } = this.props;
     return (
       <div className="main-container">
         <div className="top">
             <Search />
-            <AsideInfo />
+            <AsideInfo {...this.props}/>
         </div>
         <QuickWeb />
       </div>
     );
   }
-}
+};
 
 export default connect((state) => state, mapDispatchToProps)(Index);

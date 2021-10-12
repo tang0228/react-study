@@ -1,0 +1,29 @@
+.top-container {
+    background-color: #00a0d8;
+    height: 86px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-container img {
+
+}
+
+.line-title {
+    width: 980px;
+    height: 28px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.line-title span {
+    font-size: 38px;
+    height: 56px;
+    line-height: 56px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #fff;
+    text-align: center;
+}

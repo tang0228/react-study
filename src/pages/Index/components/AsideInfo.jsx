@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, useHistory } from "react-router-dom";
 import "./asideInfo.css";
 import { getMyInfo } from "../../../apis/myinfo";
+import { Message } from "element-react";
 
 function AsideInfo(props) {
+  const history = useHistory();
+  const { delUser } = props;
   const [myInfo, setMyInfo] = useState(null);
-  
+
   useEffect(() => {
     (async () => {
       const res = await getMyInfo();
@@ -29,10 +32,28 @@ function AsideInfo(props) {
             <span>{myInfo.job}</span>
           </div>
           <div className="btns">
-            <button className="intro-btn" onClick={() => {
-                props.history.push("/message")
-            }}>私信</button>
-            <button className="intro-btn">关注</button>
+            <button
+              className="intro-btn"
+              onClick={() => {
+                props.history.push("/message");
+              }}
+            >
+              私信
+            </button>
+            <button
+              onClick={() => {
+                Message({
+                  type: "success",
+                  message: "退出成功",
+                });
+                history.push("/login", "logon");
+                delUser();
+                localStorage.removeItem("isLogin");
+              }}
+              className="intro-btn"
+            >
+              退出
+            </button>
           </div>
         </div>
       </div>

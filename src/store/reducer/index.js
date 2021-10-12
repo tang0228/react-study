@@ -1,9 +1,7 @@
 import {combineReducers} from "redux"
 
-import countReducer from "./count";
-import navReducer from "./nav";
+import userReducer from "./user";
 
 export default combineReducers({
-    countReducer,
-    navReducer
+    user: userReducer,
 })

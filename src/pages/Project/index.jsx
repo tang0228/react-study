@@ -29,12 +29,12 @@ export default function Helper() {
           } else {
               setShowToTop(false);
           }
-      },
+      }, []
   )
 
   const clickHandler = useCallback(() => {
     proWrap.current.scrollTop = 0;
-  });
+  }, []);
 
   const lis = proList.map((p) => (
     <li key={p.id} className="pro-item">

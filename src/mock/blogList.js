@@ -23,7 +23,7 @@ Mock.mock(/^\/api\/blog(\?.+)?$/, "get", function (options) {
         code: 0,
         msg: "",
         data: {
-            "total|2000-3000": 0,
+            total: 1345,
             [`rows|${query.limit || 10}`]: [{
                 id: "@guid",
                 title: "@ctitle",
