@@ -11,6 +11,7 @@ import utils from "../../utils";
 import { v4 as uuidv4 } from "uuid";
 
 import "./blogDetail.css";
+import "../../assets/markdown.css";
 
 const avatars = [
   "https://qiheizhiya.oss-cn-shenzhen.aliyuncs.com/image/avatar6.jpg",
